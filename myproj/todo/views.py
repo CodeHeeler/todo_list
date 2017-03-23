@@ -25,5 +25,5 @@ def create(request):
     else:
         form = TaskForm()
     template = loader.get_template('todo/create.html')
-    return HttpResponse(template.render())
-    # return template.render({'form': form})
+    return HttpResponse(template.render({'form': form}))
+    
