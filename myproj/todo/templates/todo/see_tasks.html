@@ -1,0 +1,7 @@
+<h1>Current Tasks:</h1>
+
+<ul>
+    {% for task in todo_list %}
+        <li><a href="{{ task.id }}/">{{ task.title }}</a></li>
+    {% endfor %}
+</ul>
